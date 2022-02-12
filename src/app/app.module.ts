@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-<<<<<<< HEAD
 
 // Rutas
 import{AppRoutingModule} from './app.routes';
@@ -37,16 +36,5 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     HeroesService
   ],
   bootstrap: [AppComponent]
-=======
-import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-
-@NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
->>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
 })
 export class AppModule { }
