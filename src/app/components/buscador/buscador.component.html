@@ -1,0 +1,18 @@
+<h1 class="animated fadeIn fast">Buscando: <small>{{ termino }} </small> </h1>
+<hr>
+
+<div class="row animated fadedIn fast "*ngIf="heroes.length==0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultado con el término: {{termino}}
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 animated fadeIn fast">
+  <app-heroe-tarjeta [heroe]="foo" [index]="foo.idx" *ngFor="let foo of heroes"></app-heroe-tarjeta>
+<!-- [heroe] e [index] son los nombres de las variables que tengo en el archivo heroe-component y tiene el @Input()-->
+<!-- con @Input() paso información de un componente padre a un componente hijo [hero] e [index] es informacion que recibo del componente padre hacia el hijo-->
+<!-- foo e i son las variable que defino acá-->
+</div>
+
