@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Spa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
@@ -25,3 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# angular-ivy-yemy9k
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-yemy9k)
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a

@@ -3,6 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "spa": {
       "projectType": "application",
       "schematics": {
@@ -13,20 +14,37 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+=======
+    "demo": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/spa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+=======
+            "outputPath": "dist/demo",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
@@ -50,12 +68,21 @@
                   "maximumError": "4kb"
                 }
               ],
+=======
+              "src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+<<<<<<< HEAD
               "outputHashing": "all"
             },
             "development": {
@@ -80,11 +107,39 @@
             }
           },
           "defaultConfiguration": "development"
+=======
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "demo:build:production"
+            }
+          }
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "spa:build"
+=======
+            "browserTarget": "demo:build"
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
           }
         },
         "test": {
@@ -92,6 +147,7 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
+<<<<<<< HEAD
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
@@ -102,10 +158,39 @@
               "src/styles.css"
             ],
             "scripts": []
+=======
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
           }
         }
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "spa"
 }
+=======
+  "defaultProject": "demo"
+}
+>>>>>>> 8393c37751f64b1ddd91a5a7c33019d3c96c230a
